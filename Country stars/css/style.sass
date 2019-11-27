@@ -1,0 +1,72 @@
+@import variables.sass
+
+body
+  background: darkgray
+  display: flex
+main
+  display: flex
+  padding: 10px
+  background: white
+  -webkit-box-shadow: 2px 2px 14px 3px rgba(0,0,0,0.36)
+  -moz-box-shadow: 2px 2px 14px 3px rgba(0,0,0,0.36)
+  box-shadow: 2px 2px 14px 3px rgba(0,0,0,0.36)
+
+  >div
+    width: 160px
+    height: 210px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    border-radius: 8px
+    border-bottom: 4px solid $color-darkblue
+    background-color: #edf1f5b8
+    margin: 10px
+
+    @for $i from 1 through 5
+      &:nth-child(#{$i})
+        .stars
+          width: 21px * $i
+
+    @for $i from 2 through 4
+      &:nth-child(#{$i})
+        border-bottom-color: $color-red
+
+    -webkit-box-shadow: 1px -1px 10px 2px rgba(0,0,0,0.22)
+    -moz-box-shadow: 1px -1px 10px 2px rgba(0,0,0,0.22)
+    box-shadow: 1px -1px 10px 2px rgba(0,0,0,0.22)
+
+    .flag
+      width: 90px
+      height: 90px
+      border-radius: 50%
+      background-size: cover
+      background-position: center
+    p
+      margin: 14px 0
+      font-size: 16px
+      text-transform: uppercase
+      font-weight: 600
+      letter-spacing: 0.7px
+    .stars
+      height: 20px
+      background-image: url("../images/star.svg")
+      background-size: contain
+      background-repeat: space
+
+$countries: argentina, brazil, canada, netherlands, spain
+
+@each $country in $countries
+  .#{$country}
+    @if $country == argentina
+      color: $color-lightblue
+    @else if $country == brazil
+      color: $color-green
+    @else if $country == canada
+      color: $color-red
+    @else if $country == netherlands
+      color: $color-darkblue
+    @else if $country == spain
+      color: $color-yellow
+    .flag
+      background-image: url("../images/#{$country}.svg")
