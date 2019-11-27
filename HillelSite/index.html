@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>INTRO+form</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">	
+</head>
+<body>
+	<header>
+		<div class="grayLine">
+			<div class="container">
+				<nav class="sities">
+					<a href="" class="active">киев</a>
+					<a href="">одесса</a>
+					<a href="">днепр</a>
+					<a href="">харьков</a>
+					<a href="">львов</a>
+				</nav>
+				<div class="grayline-R">
+					<a href="mailto:kyiv@ithillel.ua" class="hd-mail">kyiv@ithillel.ua</a>
+					<a href="tel:+38(067)8084491" class="hd-phone">+38(067)808 44 91</a>
+					<nav class="sities">
+						<a href="" class="active">rus</a>
+						<a href="">ukr</a>
+					</nav>
+				</div>
+			</div>			
+		</div>
+	</header>
+	<main>
+		<div class="intro">
+			<div class="whiteLine">
+				<div class="container">
+					<img class="logo" src="header_images/logo.svg" alt="">
+					<nav class="main-nav">
+						<div class="school">
+							<a href="">школа</a>
+							<div class="school_menu">
+								<a class="school_menu-a" href="">о школе</a>
+								<a href="">преподаватели</a>
+								<a href="">стать преподавателем</a>
+								<a href="">отзывы</a>
+								<a href="">галлерея</a>
+								<a href="">видео-обзор</a>	
+							</div>
+						</div>						
+						<a href="">курсы</a>
+						<a href="">трудоустройство</a>
+						<a href="">вебинары</a>
+						<a href="">блог</a>
+						<a href="">контакты</a>
+						<a class="evo" href=""></a>
+						<button class="greenBot" href="">бесплатная<br>консультация</button>	
+					</nav>
+				</div>
+			</div>			
+			<div class="intro_container">
+				<div class="container">
+					<div class="cont">
+						<div class="LogoIntro">
+							<img src="intro_images/logo-intro.svg" alt="">
+							<span>Учись ради мечты!</span>
+							<button class="greenBot" data-target="#Modal_reg_form" data-toggle="modal">записаться на курс</button>
+						</div>
+						<div class="mapUkraine">
+							<img class="mapPic" src="intro_images/map-ukraine.svg" alt="">
+							
+							<div class="mapLoc locKyiv">
+								<span class="locKyivPin">
+									киев<img class="picPin" src="intro_images/map-pin.svg" alt="">
+								</span>
+							</div>							
+							<span class="mapLoc locKharkiv">харьков</span>
+							<span class="mapLoc locDnipro">днепр</span>
+							<span class="mapLoc locOdesa">одесса</span>
+							<span class="mapLoc locLviv">львов</span>
+						</div>					
+					</div>
+					<div class="cont">
+						<div class="contDiv">
+							<img src="intro_images/first__screen/icon-shuttle.svg" width="50" alt="">			
+							<p class="h1">8000</p>
+							<span class="IconT Plus">+</span>
+							<p class="h2">Выпускников<br>Школы</p>				
+						</div>
+						<div class="contDiv">
+							<img src="intro_images/first__screen/icon-youtube.svg" width="50" alt="">
+							<p>
+								<span class="BoldSpan1">Самый крупный в стране You-Tube-канал</span><br>
+								среди IT-школ, которые занимаются обучением в offline режиме
+							</p>
+						</div>				
+					</div>
+					<div class="cont">
+						<div class="contDiv">
+							<img src="intro_images//first__screen/icon-age.svg" alt="">
+							<p>
+								<span class="BoldSpan2">6<span class="IconT Ages">лет</span></span>	
+								Школа предоставляет образовательные услуги
+							</p>
+						</div>
+						<div class="contDiv">
+							<img src="intro_images//first__screen/icon-visitors.svg" alt="">
+							<p>
+								<span class="BoldSpan2">2000<span class="IconT Plus">+</span></span>
+								человек в день посещают сайт школы
+							</p>
+						</div>
+						<div class="contDiv">
+							<img src="intro_images//first__screen/icon-cities.svg" alt="">
+							<p>
+								<span class="BoldSpan2">4<span class="IconT Ages">города</span></span>	
+								Киев, Одесса, Днепр, Харьков
+							</p>
+						</div>
+						<div class="contDiv">
+							<img src="intro_images//first__screen/icon-coaches.svg" alt="">
+							<p>
+								<span class="BoldSpan2">100<span class="IconT Plus">+</span></span>
+								преподавателей-практиков
+							</p>
+						</div>
+						<div class="contDiv">
+							<img src="intro_images/first__screen/icon-employment.svg" alt="">
+							<p>
+								<span class="BoldSpan2">43<span class="IconT Ages">%</span></span>	
+								трудоустроенных студентов
+							</p>
+						</div>
+						<div class="contDiv">
+							<img src="intro_images//first__screen/icon-salary.svg" alt="">
+							<p>
+								<span class="BoldSpan2">21600<span class="IconT Ages">грн/мес</span></span>	
+								со старта составила рекордная зарплата Выпускника
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+
+		<div class="modal fade" id="Modal_reg_form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<form class="reg_form" action="" method="post">
+						<div class="formHeader">
+							<div class="formHeader_H">
+								<p class="request_reg">
+									Заявка на регистрацию
+								</p>
+								<button></button>									
+							</div>
+							<div class="formHeader_Q">
+								<img class="formPic" src="form_images/faq_b.svg" alt="">
+								<p>
+									Оставьте ваши контактные данные, и мы вам обязательно перезвоним.
+								</p>	
+							</div>
+						</div>
+						<div class="formMain">						
+							<label for="Username">
+								<span class="label">Имя</span>
+								<input class="entering" type="text" placeholder="Имя" required="">
+								<span class="circle"></span>
+							</label>
+							<label for="Email">
+								<span class="label">Email</span>					
+								<input class="entering" type="email" placeholder="Email" required="">
+								<span class="circle"></span>			
+							</label>
+							<label for="Phone">
+								<span class="label">
+									Телефон<br>							
+								</span>					
+								<input class="entering" type="phone" placeholder="Телефон" required="">
+								<span class="circle"></span>
+							</label>
+							<label for="City">
+								<span class="label">Город</span>				
+								<select class="entering" name="City" id="" required="">
+									<option value="">_</option>
+									<option class="tron1" value="Kyiv">Киев</option>
+									<option value="Kharkiv">Харьков</option>
+									<option value="Lviv">Львов</option>
+								</select>
+								<span class="circle"></span>
+							</label>
+							<label for="Cours">
+								<span class="label">Курс</span>				
+								<select class="entering" name="Cours" id="" required="">
+									<option value="">_</option>
+									<option value="Front-End">Front-End</option>
+									<option value="Java">Java</option>
+									<option value="Phython">Python</option>
+								</select>
+								<span class="circle"></span>
+							</label>										
+						</div>
+						<div class="formFooter">					
+							<button class="ordering">
+								оставить заявку					
+							</button>
+						</div>
+					</form>						
+				</div>
+			</div>
+		</div>
+		<div class="container">	
+			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+				<div class="carousel_header">					
+					<span>Отзывы выпускников школы</span>
+				</div>				
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="carousel-item-inside">
+							<p>							
+								Только получил товар, ещё не пробовал. Сразу два вопроса: 1) На каком основании на сайте и в чеке название Xiaomi, если, ни на упаковке, ни в инструкции, нигде на товаре нет этой надписи, на английском языке? Везде написано SO WHITE. Какое отношение Xiaomi имеет к этой бритве? 2) Почему в комплекте нет инструкции на украинском языке, а также, нет украинского стикера на упаковке? По-моему это нарушение закона, или я не прав? 
+							</p>													
+							<a href="">
+								<img class="studets_foto" src="https://lms.ithillel.ua/uploads/images/500x500_image-1568980519150.jpeg">
+								<img class="facebookIcon" src="images-carusel/facebook.svg" alt="">
+								<span>Александр Порубиновский</span>
+							</a>						
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="carousel-item-inside">
+							<p>
+								Бритва на четвёрочку для жёсткой щетины. Побриться перед походом к любовнице, сойдёт. Больше для юношеского начинающего мягкого волоса. А так приходится добривать обычной бритвой. Подарю сыну!
+							</p>
+							<a href="">
+								<img class="studets_foto" src="https://lms.ithillel.ua/uploads/images/500x500_image-1568985697201.jpeg">
+								<img class="facebookIcon" src="images-carusel/facebook.svg" alt="">
+								<span>Анастасия лупяк</span>
+							</a>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="carousel-item-inside">
+							<p>							
+								Самый лучший вариант для меня использования данной бритвы - каждодневное бритье. Однодневная щетина ;).
+								Довольно прилично бреет в мокром варианте. НО есть некоторое раздражение.
+								Даже когда ее вымыл и высушил нормально - после включения стал немного другой звук и еле сбавил скорость по кнопке.
+								Лучше на порядок чем машинка "Харьков", если кто в теме ;)
+							</p>
+							<a href="">
+								<img class="studets_foto" src="https://lms.ithillel.ua/uploads/images/original_image-1568990761619.jpeg">
+								<img class="facebookIcon" src="images-carusel/facebook.svg" alt="">
+								<span>Сергей гончаренко</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+					<div>
+						<span class="carousel-control-prev-icon" aria-hidden="true">
+							<img class="carousel-control-arrow" src="images-carusel/left-arrow.svg" alt="">
+						</span>
+					</div>								
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+					<div>
+						<span class="carousel-control-next-icon" aria-hidden="true">
+							<img class="carousel-control-arrow" src="images-carusel/right-arrow.svg" alt="">
+						</span>
+					</div>								
+				</a>
+			</div>
+		</div>	
+		<div class="container container_courses">	
+			<div class="courses">
+				<a class="courses__block active" href="">				
+					<div class="courses__title">
+						<img src="images-courses/Front-End-Basic_b.svg" alt="Front-End-Basic" height="30">
+						<p>Course <br> Front-End Basic</p>
+					</div>
+					<div class="courses__about">
+						<p class="title">Front-End Basic</p>
+						<p>LВ рамках курса Front-End Basic студенты без опыта в разработке изучают HTML и CSS. Нарабатывают практические навыки в верстке адаптивных сайтов, знакомятся с пре- и постпроцессорами. В программу курса также входят CSS фреймворки, такие как Bootstrap. По окончании курса успешные Выпускники могут занимать должность верстальщика в Web-студиях.</p>
+					</div>				
+				</a>
+				<a class="courses__block" href="">				
+					<div class="courses__title">
+						<img src="images-courses/Front-End-Pro_b_181227_082130.svg" alt="Front-End-Basic" height="30">
+						<p>Course<br> Front-End Pro <br><span>advanced</span></p>
+					</div>
+					<div class="courses__about">
+						<p class="title">Front-End pro</p>
+						<p>Курс Front-End Pro предназначен для Студентов, имеющих практические навыки в верстке. По окончании курса Выпускники владеют JavaScript на достаточном уровне, чтобы писать скрипты, формы, работать с AJAX, а также могут настроить сборку проекта в Gulp. Курс позволяет претендовать на вакансии Junior Front-End Developer.</p>
+					</div>				
+				</a>
+				<a class="courses__block" href="">				
+					<div class="courses__title">
+						<img src="images-courses/React_b.svg" alt="Front-End-Basic" height="30">
+						<p>Course<br>React<br><span>advanced</span></p>
+					</div>
+					<div class="courses__about">
+						<p class="title">react</p>
+						<p>Курс, посвященный библиотеке React, раскрывает для Студентов все нюансы: от того, как работает виртуальный DOM, до того, как собрать приложение Webpack-ом.</p>
+					</div>				
+				</a>
+				<div class="courses__line"></div>
+			</div>
+		</div>
+	</main>
+	<footer>
+
+		<div class="footer_dark">
+			<div class="container">
+				<div class="ft-top">
+					<div class="ft-top-left">
+						<ul>
+							<li><a href=""><img src="footer-images/footer_socialFb.svg" alt=""><hr>85678</a></li>
+							<li><a href=""><img src="footer-images/footer_socialYt.svg" alt=""><hr>85678</a></li>
+							<li><a href=""><img src="footer-images/footer_socialIg.svg" alt=""><hr>85</a></li>
+							<li><a href=""><img src="footer-images/footer_socialIn.svg" alt=""><hr>85678</a></li>
+							<li><a href=""><img src="footer-images/footer_socialTg.svg" alt=""></a></li>
+						
+						</ul>
+					</div>
+					<ul class="ft-top-right">
+
+						<!-- <div class="btn-group"> -->
+							
+							<li>
+								<button class="ft_btn-sities active">				
+									Киев
+								</button>
+								<div class="dropdown-info">
+									<p>	ул. Мечникова<br>
+										ст.метро "Кловская"<br>
+										2-й этаж, офис 222а
+									</p>
+									<p>
+										+38<098>166-22-16<br>
+										+38(067)116-11-24
+									</p>
+									<p>
+										kyiv@ithillel.ua
+									</p>
+								</div>
+							</li>
+							
+
+							<li>
+								<button class="ft_btn-sities">				
+									Одесса
+								</button>
+								<div class="dropdown-info">
+									<p>	ул. Одесская<br>
+										дом 18"<br>
+										офис 115
+									</p>
+									<p>
+										+38<098>127-59-51<br>
+										+38(067)583-38-17
+									</p>
+									<p>
+										odessa@ithillel.ua
+									</p>
+								</div>
+							</li>
+							
+							
+							<li>
+								<button class="ft_btn-sities">				
+									Днепр
+								</button>
+								<div class="dropdown-info">
+									<p>	ул. Днепровская<br>
+										дом 20"<br>
+										офис 115
+									</p>
+									<p>
+										+38<098>127-59-51<br>
+										+38(067)583-38-17
+									</p>
+									<p>
+										dnipro@ithillel.ua
+									</p>
+								</div>
+							</li>
+							
+
+							<li>
+								<button class="ft_btn-sities">				
+									Харьков
+								</button>
+								<div class="dropdown-info">
+									<p>	ул. Харьковская<br>
+										дом 205"<br>
+										офис 1
+									</p>
+									<p>
+										+38<098>127-59-51<br>
+										+38(067)583-38-17
+									</p>
+									<p>
+										kharkiv@ithillel.ua
+									</p>
+								</div>
+							</li>
+							
+
+							<li>
+								<button class="ft_btn-sities">				
+									Львов
+								</button>
+								<div class="dropdown-info">
+									<p>	ул. Львовская<br>
+										дом 24"<br>
+										3-й этаж, офис 315
+									</p>
+									<p>
+										+38<098>127-22-55<br>
+										+38(067)133-14-15
+									</p>
+									<p>
+										lviv@ithillel.ua
+									</p>
+								</div>
+							</li>
+							
+
+						<!-- </div>	 -->
+
+					</ul>
+				</div>
+				<hr>
+				<div class="ft-bottom">
+					<p>
+						Подпишитесь на рассылку - оставайтесь в курсе трендов IT-рынка, а также новостей компьютерной школы Hillel.
+					</p>
+					<form action="">					
+						<input type="email" placeholder="Ваш email" required="">	
+						<button class="btn-ft-bottom">подписаться</button>
+					</form>
+					
+				</div>
+			</div>
+		</div>
+		<div class="footer-light">
+			<div class="container">
+				<nav>
+					<ul>
+						<li><a href="">Личный кабинет</a></li>
+						<li><a href="">Работа в IT</a></li>
+						<li><a href="">Карта сайта</a></li>
+						<li><a href="">Политика конфиденциальности</a></li>					
+					</ul>
+				</nav>
+				<p>© 2019 Компютерная школа Hillel</p>
+			</div>
+		</div>
+		
+	</footer>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
