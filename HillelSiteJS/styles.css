@@ -1026,6 +1026,8 @@ footer .container{
 .dropdown-info{
 	position: absolute;
 	display: none;	
+	width: 100%;
+	justify-content: space-between;
 	top: 36px;
 	left: 0;
 	border-top: 1px solid #ffffff26;
